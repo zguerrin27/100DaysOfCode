@@ -1,6 +1,5 @@
 // fizz buzz problem on leetcode 
 
-
 var fizzBuzz = function(n) {
   let final = [];
     for(let i = 1; i <= n; i++){
