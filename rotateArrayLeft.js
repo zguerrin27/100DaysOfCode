@@ -9,3 +9,6 @@ function rotLeft(a, d) {
   }
   return a;                     // return a
 }
+
+
+
