@@ -7,3 +7,15 @@ var twoSum = function(nums, target) {
       }
   }  
 }; 
+
+
+var twoSum = function(nums, target) {
+  let dic = {}
+  for(let i = 0; i < nums.length; i++) {
+    let potential = target-nums[i]
+      if (potential in dic) {
+          return [dic[potential], i]
+      }
+      dic[nums[i]] = i
+  }
+}; 
