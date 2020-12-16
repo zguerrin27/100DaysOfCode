@@ -85,3 +85,27 @@ class BST {
 	}
 	
 }
+
+/*
+
+With the Remove method. First we find the node, then we remove it.
+
+- While iterrating through tree we must track the parent node. That is so we can connect the left and right sub nodes / trees to the parent node of the node we are removing 
+
+
+
+The first case is going to be handling the removal of a node when there are two children nodes present
+- first step is to check if currentNode left and right are !== null
+- if so...set currentNode value to the smallest, left most value of the right subtree
+- so that is currentNode.value = currentNode.right.getMinValue() we create a helper method to find the smallest value in right tree.
+- then remove the value at the bottom left of right tree(smallest value of that tree) by calling the remove method on it like so: currentNode.right.remove(currentNode.value, currentNode) currentNode acts a parent node
+
+Next case is going to be handling the root node
+- if 
+
+Next case is parentNode.left === currentNode
+
+Next case is parentNode.right === currentNode
+
+
+*/
